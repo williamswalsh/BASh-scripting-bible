@@ -1,0 +1,100 @@
+$> brew clean all 
+-> if there is a broken dependency
+-> Fixes dependencies that may have been removed
+
+$> brew info
+$> brew deps --tree --installed
+-> Display dependencies
+
+Tarball Package
+-> created using the tar cmd
+-> tar -xcvf  package.tar.gz
+
+
+$> make
+$> make install 
+
+-> Find the source file at the end of a link
+$> readlink symbolicLinkName
+fileToLinkTo
+
+
+
+VIM
+:w <filename> -> writes DATA to a new file with name <filename>
+:q		-> quit
+:q!		-> quit + delete modifications
+:wq -> write & quit
+
+x 		-> Delete char
+2x		-> Deletes 2 chars
+
+dd		-> Delete line
+5dd
+
+dw		-> Delete word
+d$ 	-> Delete to end of line
+J	->  Delete \n
+u -> undo
+A -> appends to end of line
+r  <char> -> replaces cursor char with <CHAR>
+
+
+When you dd it saves it to a buffer -> p to paste that data to cursor
+
+
+yy -> yank line
+yy -> yank word
+
+v -> visual mode to see what data is selected
+
+Searching
+/<searchterm> ENTER
+n -> next instance
+
+:%s/<searchterm>/<replacement/g		
+s -> search and replace
+% multi-line
+g-> replace all instances (global)
+
+
+
+
+
+# Braces not required around variable name
+$variable == ${variable}
+
+
+# Assign the output the command to a variable
+A) Backtick ``
+B) $()
+
+# A subshell is created to run commands between backticks
+# Vars in parent script are not available to commands between backticks Note Bene
+
+
+# Input redirection <
+# Count the words in a certain file:w
+
+wc -l < fileName
+
+# Input inline redirection <<
+ $> wc << EOF
+ > this is a tes
+ > this a is tet
+ > EOF
+       2       8      28
+
+
+
+# Math
+expr 1 + 4
+
+
+
+
+
+
+
+
+

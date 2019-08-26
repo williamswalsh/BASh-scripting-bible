@@ -1,0 +1,106 @@
+
+ps -f
+bash
+ps -f -> 2 bash processes listed 
+
+PPID -> Parent PID
+
+Executing multiple commands:
+- process list
+(cmd;cmd;cmd)
+(ps; ls; du; ps -f; cat file; ls -l) -> Subshell created
+
+ps; ls; du; ps -f; cat file; ls -l -> No Subshell created
+{ps; ls; du; ps -f; echo $BASH_SUBSHELL; cat file; ls -l } -> No Subshell created
+
+# How deep you are
+( echo $BASH_SUBSHELL; (echo $BASH_SUBSHELL))
+1
+2
+
+# Begin background processes
+sleep 3000&
+
+# List background processes
+jobs -l
+
+
+# Aliases -> Details of command built-in/External?
+# External require forking(a new process) 
+type -a cd
+
+type -a echo
+
+type e 
+e is aliased to `exit'
+
+history -> h
+echo $HISTSIZE -> Size of cmds shown
+
+!! -> Execute last command
+
+History file
+~/.bash_history
+
+env/printenv -> all global variables
+set -> global and local variables
+diff them to get just local variables
+
+
+local var defn
+my_var="hello world"
+
+# Make local var global
+export my_var
+
+# delete global
+unset my_var
+
+
+# Currently executing or about to execute command
+echo $BASH_COMMAND
+
+# create rand
+echo $RANDOM
+
+# Temp directory location
+l `ECHO $TMPDIR`
+
+
+
+
+
+
+# Startup files
+/etc/profile
+$HOME /.bash_profile /.bashrc /.bash_login /.profile
+
+
+# Non-interactive shell
+# E.G. system executes scripts
+# BASH_ENV points to a file to run before executing any script
+
+Child scripts will take exported(global) vars from:
+/etc/profile
+/etc/profile.d/*.sh
+$HOME/.bashrc
+
+!:
+ /.bash_login /.profile - non-interactive shell shouldn't have a profile or login
+
+# put all vars in /etc/profile.d/.sh
+
+
+# ARRAYS
+myArr=( hey hi hello chao bonjour bonjourno halo )
+
+# Display values
+$> echo ${myArr[0]}
+hey
+$> echo ${myArr[*]}
+hey hi hello chao bonjour bonjourno halo )
+
+# Substitution
+myArr[0]="bye"
+$> echo ${myArr[*]}
+bye hi hello chao bonjour bonjourno halo

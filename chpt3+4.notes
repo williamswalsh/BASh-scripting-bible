@@ -1,0 +1,113 @@
+Symbolic Link:
+VAN BE ON SEPERATE PHYSICAL MEDIUM
+Files do not share contents
+One file is just a pointer(9KB) to the other
+Different files - ls -i - different inodes
+ln -s fileToLinkTo linkName
+ls  linkName
+lrwxr-xr-x  1 will  staff    12B  5 Jun 08:15 linkName -> fileToLinkTo
+
+
+Hard link:
+ONLY ON SAME PHYSICAL MEDIUM
+Virtual file
+One file is just a pointer(9KB) to the other
+Same files - ls -i - same inodes
+
+l hardLink
+-rw-r--r--  2 will  staff    16B  5 Jun 08:22 hardLink
+
+
+tail -f fileName
+# Allow you to monitor file while it is being edited by a process in realtime
+
+
+ ps -ef
+ # Running processes
+
+ps aux | grep <NAME>
+# Find process by string
+
+ ps ww <PID>
+ # Show details of process with PID
+
+
+pstree
+
+# mounting
+# When you create a virtual file/Directory to represent a new storage device
+
+
+# See all mounted devices:
+df -h
+Filesystem      Size   Used  Avail Capacity iused               ifree %iused  Mounted on
+/dev/disk1s1   234Gi   77Gi  151Gi    34% 1739434 9223372036853036373    0%   /
+devfs          198Ki  198Ki    0Bi   100%     689                   0  100%   /dev
+/dev/disk1s4   234Gi  4.0Gi  151Gi     3%       5 9223372036854775802    0%   /private/var/vm
+map -hosts       0Bi    0Bi    0Bi   100%       0                   0  100%   /net
+map auto_home    0Bi    0Bi    0Bi   100%       0                   0  100%   /home
+
+
+# Disk Usage
+du -h
+
+
+sort  (character by character sort - 13 after 111)
+sort -n = sorts numbers as numbers 111 after 13
+sort -M by month
+-b ignore leading blanks
+
+sort sort1 -o sort1
+sort -r sort1 - reverses order
+-t '<field seperator>'
+-k 3 -> sort using the third row
+
+$> sort -t ',' -k 2 sort1
+a,g
+a,h
+c,h
+e,i
+h,i
+b,k
+g,p
+b,t
+e,u
+e,y
+
+- Sort outpust from disk usage
+du -sh * | sort -nr
+
+
+# Searching 
+grep 'string' <file>
+
+-v lines without string
+-c number of instances found
+
+# If stringA or stringB exists
+grep -e 'stringA' -e 'stringB' <file>
+
+# line contains either 't' or 'f'
+grep [tf] <file>
+two
+three
+four
+five
+
+gzip -> compressor
+gunzip -> de-compressor
+.gz extension
+
+# Compress
+tar -cvf <archive_name>.tar inputA inputB
+
+# List contents
+tar -tf <archive_name>.tar
+
+# Decompress - this will recreate the file structure ** 
+tar -xvf <archive_name>.tar
+
+# Decompress gzip & tarred objects
+tar -zxvf <archive_name>.tgz
+
+

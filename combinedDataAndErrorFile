@@ -1,0 +1,46 @@
+ls: fakeFile: No such file or directory
+.:
+total 148
+-rw-r--r--  1 will  staff    16B  5 Jun 08:13 fileToLinkTo
+lrwxr-xr-x  1 will  staff    12B  5 Jun 08:15 symbolicLinkName -> fileToLinkTo
+-rw-r--r--  2 will  staff    16B  5 Jun 08:25 hardLink
+-rw-r--r--  2 will  staff    16B  5 Jun 08:25 fileToHArdLinkTo
+-rw-r--r--  1 will  staff     0B  6 Jun 08:07 fakeMediaDevice
+-rw-r--r--  1 will  staff     0B  6 Jun 08:40 sort3
+-rw-------  1 will  staff    38B  6 Jun 08:46 sort2
+-rw-------  1 will  staff    41B  6 Jun 08:53 sort1
+-rwxrwxrwx  1 will  staff    28B  9 Jun 19:17 fileToCompress
+-rw-r--r--  1 will  staff   2.0K  9 Jun 19:21 test.tar
+-rw-r--r--  1 will  staff    18B  9 Jun 23:41 xx
+-rw-r--r--@ 1 will  staff   1.7K 10 Jun 09:17 chpt5.notes
+-rw-r--r--  1 will  staff   2.2K 10 Jun 09:17 chpt3+4.notes
+-rw-r--r--  1 will  staff   2.2K 14 Jun 22:31 fileName2
+lrwxr-xr-x  1 will  staff    20B 14 Jun 23:07 .#fileName2 -> will@wills-MBP.62264
+-rwxr-xr-x  1 will  staff    35B 14 Jun 23:12 1.2.sh
+-rwxr-xr-x  1 will  staff   108B 14 Jun 23:35 1.sh
+-rwxr-xr-x  1 will  staff   233B 15 Jun 16:55 2.sh
+-rw-r--r--  1 will  staff     4B 15 Jun 17:16 whawha
+-rwxr-xr-x  1 will  staff   496B 15 Jun 17:24 3_fx_exit_value.sh
+-rwxr-xr-x  1 will  staff   436B 16 Jun 11:11 5_exit_status.sh
+-rwxr-xr-x  1 will  staff   339B 16 Jun 11:23 6_structured.sh
+-rw-r--r--  1 will  staff     0B 16 Jun 11:38 banana
+-rwxr-xr-x  1 will  staff   965B 16 Jun 11:41 7_test.sh
+-rwxr-xr-x  1 will  staff   641B 16 Jun 11:56 8_strEmpty.sh
+-rwxr-xr-x  1 will  staff   328B 16 Jun 11:57 4_math.sh
+-rwxr-xr-x  1 will  staff   544B 16 Jun 12:02 9_fileState.sh
+-rwxr-xr-x  1 will  staff   345B 16 Jun 12:55 10_properMath.sh
+-rw-r--r--  1 will  staff    52B 16 Jun 13:13 counties
+-rwxr-xr-x  1 will  staff   336B 16 Jun 13:18 12_forAndIFSState.sh
+-rwxr-xr-x  1 will  staff   249B 16 Jun 13:23 11_patternMatching.sh
+-rwxr-xr-x  1 will  staff   340B 16 Jun 13:56 13_cliParam.sh
+-rwxr-xr-x  1 will  staff   150B 17 Jun 07:56 14_case.sh
+-rwxr-xr-x  1 will  staff   205B 17 Jun 08:24 15_getopt.sh
+-rwxr-xr-x  1 will  staff   529B 17 Jun 08:37 16_getopts.sh
+-rw-r--r--  1 will  staff    17B 17 Jun 08:56 inputFile
+-rwxr-xr-x  1 will  staff   489B 17 Jun 08:59 17_read.sh
+-rw-r--r--  1 will  staff   1.5K 17 Jun 09:00 chpt_9-11.txt
+-rw-r--r--  1 will  staff     0B 22 Jun 10:47 fil
+-rw-r--r--  1 will  staff    72B 22 Jun 10:49 errorFile
+-rw-r--r--  1 will  staff   2.4K 22 Jun 10:49 outputFile
+-rwxr-xr-x  1 will  staff   482B 22 Jun 10:56 15_redirection.sh.sh
+-rw-r--r--  1 will  staff    40B 22 Jun 10:57 combinedDataAndErrorFile
