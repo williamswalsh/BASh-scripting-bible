@@ -19,7 +19,7 @@ sed 's/no, I did not/yes, I did/g' data5.txt
 sed -n 's/no, I did not/yes, I did/g' data5.txt
 
 
-# -n + p -> Prints the original line
+# -n + p -> Prints the line
 sed -n 's/no, I did not/yes, I did/p' data5.txt
 
 # w -> Prints the results of the substitution to a file
@@ -31,7 +31,7 @@ sed 's/Core/CORE/'
 sed 's!Core!CORE!'
 
 
-# Modify only line 2 (NO FLAG)
+# NB - Modify only line number 2 (NO FLAG) -> (The second line)
 sed '2s/brown/black/' data1.txt
 
 # Modify only line 2 to $

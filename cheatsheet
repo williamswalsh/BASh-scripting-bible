@@ -1,0 +1,6 @@
+# If sed fails try gsed -> slight format differences
+
+# Delete blank lines                                        gsed '{ /^$/d }'
+
+# Displays line numbers                                     gsed '=' log.txt | gsed ' N; s/\n/ /'
+

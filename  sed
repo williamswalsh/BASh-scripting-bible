@@ -1,0 +1,194 @@
+
+
+
+
+    
+        body {
+            width: 100%;
+            height: 190%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            color: #666;
+        }
+
+        .header {
+            background-color: #4caf50;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .header img {
+            display: block;
+            margin: 0 auto;
+            max-width: 150px;
+        }
+
+        .body {
+            width: 580px;
+            margin: 0 auto;
+        }
+
+        .footer {
+            width: 580px;
+            margin: 0 auto;
+            margin-top: 10px;
+            text-align: center;
+            font-weight: normal;
+            line-height: 19px;
+            font-size: 14px;
+            padding: 0;
+        }
+
+        a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+
+        .salutation {
+            line-height: 1.3;
+            word-break: normal;
+            font-size: 40px;
+            font-weight: normal;
+            margin: 0px;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+
+        .lead {
+            font-weight: normal;
+            line-height: 21px;
+            font-size: 18px;
+            margin: 0px;
+            padding-top: 7px;
+            padding-bottom: 10px;
+        }
+
+        .button a {
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin: 20px auto;
+            padding: 20px 40px;
+            border: none;
+            font-size: 20px;
+            background-color: #4caf50;
+        }
+
+        .dev-mode{
+            border-top: 3px solid red;
+        }
+
+        .dev-mode .label {
+            background: #e00;
+            color: #fff;
+            font-size: 11pt;
+            font-weight: bold;
+            height: 19px;
+            letter-spacing: 5pt;
+            padding: 0 2em;
+            position: absolute;
+            text-align: center;
+            text-transform: uppercase;
+            right: 0%;
+        }
+
+        .dev-mode .label::before {
+            border-color: #e00 #e00 transparent transparent;
+            border-style: solid;
+            border-width: .6rem;
+            content: "";
+            position: absolute;
+            left: -19px;
+        }
+
+        li {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        #login-button-container {
+            text-align: center;
+            width: 100%;
+        }
+
+        .ac-table {
+            border-collapse: collapse;
+            font-size: 1.2em;
+            margin: .5em 0;
+            width: 100%;
+        }
+        .ac-table th,
+        .ac-table td {
+            padding: .6em .8em;
+            text-align: left;
+        }
+        .ac-table .price {
+            padding-right: 0;
+            text-align: right;
+        }
+        .ac-history-title th {
+            border-bottom: 2px solid #666;
+        }
+        .ac-history ~ .ac-history th {
+            padding-top: 1.5em;
+        }
+        .ac-total th {
+            border-top: 2px solid #666;
+            font-size: 1.1em;
+        }
+        .ac-total .empty-space {
+            padding-top: 1.3em;
+        }
+
+    
+
+
+
+
+    
+        
+    
+    
+        
+            Hi William Walsh,
+        
+        
+            Payment for order for documents from Williams Organisation has been processed successfully (Order number: 2,453).
+        
+		
+	        
+	            The following documents have been ordered in this order:
+	        
+
+	        
+                
+                    
+                        
+                    
+                    
+                        TOTAL
+                        40.00
+                        $
+                    
+                
+            
+        
+        
+            Please login to Digitary CORE and click on the Orders tab to review your order:
+        
+        
+          
+              LOGIN
+          
+        
+    
+    
+        &copy; Copyright 2005-2019 Digitary
+    
+
+
+

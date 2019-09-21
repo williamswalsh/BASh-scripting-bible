@@ -39,5 +39,10 @@ gawk -f script1.gawk data2.txt
 # Then pass it to gawk and execute it on a file
 gawk -f script3.gawk data3.txt
 
-
+# Prints line
+echo "This is a test." | gawk  '/test/{print $0}'
+# Prints first word
+echo "This is a test." | gawk  '/test/{print $1}'
+# Prints second word
+echo "This is a test." | gawk  '/test/{print $2}'
 

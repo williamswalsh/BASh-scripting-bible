@@ -1,0 +1,9 @@
+This line  contains at least a single instance of a double space.
+This line doesn't contains at least a single instance of a double space.
+This line does contains at least a single instance of a double  space.
+This line doesn't contains at least a single instance of a double space.
+$200000000 - ;-)
+
+
+Finding a caret in text ^.
+^ Caret at start of line?

@@ -24,9 +24,9 @@ sed '$a\
 sed '$c\
 >  This is an changed line.' data7.txt
 
-## Changes line 3 to this line
-sed '3c\
->  This is an changed line.' data7.txt
+## Changes line 2 to this line
+sed '2c\
+This is an changed line.' data7.txt
 
 ## Finds pattern and replaces all matching lines. ** ALL **
 sed '/My terrible line/c\

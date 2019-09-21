@@ -16,8 +16,11 @@ sed -n '/Volume-liters:/p' surfboards.txt
 sed -n '2,3p' surfboards.txt
 
 
-
 ## Print before its altered
+# -n no ouptut
+# /3/ pattern
+# p -> print line
+# s// -> substitute
 sed -n '/3/{
 p
 s/line/test/p
