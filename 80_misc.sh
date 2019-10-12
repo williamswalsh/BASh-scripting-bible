@@ -23,7 +23,7 @@ fi
 # Executes commands from STDIN
 # Gets all users processes PID's
 # Echo's them to the STDOUT
-ps -u $USER_ACCOUNT > /dev/null |gawk '{print $2}'|xargs -d '\n' echo
+ps -u $USER_ACCOUNT > /dev/null|gawk '{print $2}'|xargs -d '\n' echo
 
 # ****** NB ******
 # Get all files which belong to a specific user

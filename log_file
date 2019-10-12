@@ -1,0 +1,9 @@
+Spider mode enabled. Check if remote file exists.
+--2019-10-11 12:09:58--  https://magicseaweed.com/Ballybunion-Surf-Report/3701/
+Resolving magicseaweed.com (magicseaweed.com)... 169.62.218.229
+Connecting to magicseaweed.com (magicseaweed.com)|169.62.218.229|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Remote file exists and could contain further links,
+but recursion is disabled -- not retrieving.
+
